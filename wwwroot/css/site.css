@@ -77,3 +77,6 @@ body {
     font-family: InkInTheMeat;
     src: url(/ink_in_the_meat/INKITMT_.otf) format('opentype');
 }
+#MainContainer{
+    font-family:InkInTheMeat;
+}
