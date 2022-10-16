@@ -80,3 +80,8 @@ body {
 #MainContainer{
     font-family:InkInTheMeat;
 }
+    #MainContainer h1 {
+        text-decoration: underline;
+        font-size: 5vw;
+        text-align:center;
+    }
