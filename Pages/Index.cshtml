@@ -4,41 +4,43 @@
     ViewData["Title"] = "Kezdőlap";
 }
 
-<div id="MainContainer">
+<div id="MainContainer" style="position:relative; top:-14.5vh;">
     <div id="Home" class="vh-100" style="background-color:black; background-image:url(/images/rim_home.jpg); background-repeat:no-repeat; background-position:center;">
         <br />
-        <img src="images/down_chevron.png" style="background-color:white; width:4vw; border-radius:50%; position:absolute; top: 90vh; right:47.4%; " />
+        <img src="images/down_chevron.png" style="background-color:white; width:4vw; border-radius:50%; position:absolute; top: 85vh; right:47.4%; " />
     </div>
     <a asp-page="/About">
-        <div id="About" class="vh-100" style="background-image:url(/images/fotorolam.png);background-repeat:no-repeat; background-position:left; background-size:contain;">
+        <div id="About" >
             <h1 class="text-center">Rólam</h1>
-            <p>Sziasztok Vértes Boglárka vagyok</p>
-            <p>
-                Tizennégy éves koromban kezdtem el érdeklődni a tetoválás művészete iránt. Kezdetben otthon elméleti szinten próbáltam képezni magam, majd egy tetováló segítségét kértem, hogy tanítson meg
-                a szakam mint elméleti, mint gyakorlati részére Először csak az elméleti részét sajátítottam el, hogy idővel elkezdtem segíteni a tetováló munkáját és megtanulni a gyakorlati részét ezzel
-                lépésről lépésre alaposan ki tanultam mindent megvettem az első felszerelése és elkezdtem önállóan tetoválni és itt már tudtam, hogy mindig is ezzel szeretnék foglalkozni.
-            </p>
+            <div class="TextIndent">
+                <p>Sziasztok Vértes Boglárka vagyok</p>
+                <p>
+                    Tizennégy éves koromban kezdtem el érdeklődni a tetoválás művészete iránt. Kezdetben otthon elméleti szinten próbáltam képezni magam, majd egy tetováló segítségét kértem,<br /> hogy tanítson meg
+                    a szakam mint elméleti, mint gyakorlati részére Először csak az elméleti részét sajátítottam el, hogy idővel elkezdtem segíteni a tetováló munkáját és megtanulni a gyakorlati részét ezzel
+                    lépésről lépésre alaposan ki tanultam mindent megvettem az első felszerelése és elkezdtem önállóan tetoválni és itt már tudtam, hogy mindig is ezzel szeretnék foglalkozni...
+                </p>
+            </div>
         </div>
     </a>
     <a asp-page="/Galery">
-        <div id="Galery" class="vh-100" style="background-image: url('images/portfolio_kepek/13.jpg'), url('images/portfolio_kepek/50.jpg'), url('images/dorifilo.jpg');background-position:center left,center center,center right; background-repeat:no-repeat;background-size:34%,34%,35%; ">
+        <div id="Galery" >
             <h1>Galéria</h1>
         </div>
     </a>
-    <a asp-page="Aftercare">
-        <div id="AfterCare" class="vh-100" style="background-image: url('images/latvany.jpg');background-repeat:no-repeat; background-position:center;background-size:contain;">
+    <a asp-page="/Aftercare">
+        <div id="Aftercare" >
             <h1>Utókezelés</h1>
             <ul>
                 <li>Tetoválás utókezelése</li>
                 <li>Amire szükséged van az utókezeléshez</li>
                 <li>Utókezelés lépései menete</li>
-                <li>Ami a gyógyulásig<span>TILOS</span></li>
+                <li>Ami a gyógyulásig<span style="color:red; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">TILOS</span></li>
                 <li>Utókezelés lehetőségei, fajtái</li>
             </ul>
         </div>
     </a>
-    <a asp-page="Numbing">
-        <div id="Numbing" class="vh-100" style="background-image: url('images/fajdalom.jpg');background-repeat:no-repeat; background-position:center;background-size:80%;">
+    <a asp-page="/Numbing">
+        <div id="Numbing" >
             <h1>Érzéstelenítés</h1>
             <ul>
                 <li>Miért fáj a tetoválás?</li>
