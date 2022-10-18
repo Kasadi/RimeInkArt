@@ -96,7 +96,7 @@ body {
 }
 
 #MainContainer {
-    font-family: Fallind;
+    font-family: 'birds of paradise ş personal use only';
 }
 
     #MainContainer h1 {
@@ -168,18 +168,121 @@ body {
 
 @media (min-width: 600px) {
     .TextIndent {
-        position: absolute;
+        position: relative;
         left: 30vw;
         background-color: rgba(255,255,255,0.6);
         padding: 5px 0 0 10px;
         border-radius: 4%;
+        top:15px;
+        width:68vw;
     }
+}
+
+@media (max-width:599px) {
+    #Numbing {
+        background-size: 100%;
+    }
+
+    #Home {
+        background-size: contain;
+    }
+
+    .TextIndent {
+        background-color: rgba(255,255,255,0.6);
+        height: 30vh;
+        top: 15px;
+        position: relative;
+    }
+
+        .TextIndent p {
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+    #collapsed-text-indent {
+        height: inherit;
+        top:0;
+       
+    }
+
+        #collapsed-text-indent p {
+            display: inherit;
+        }
+
+
+    #About {
+        height: 40vh;
+    }
+
+
+
+    #Galery {
+        height: 40vh;
+    }
+
+    #Aftercare {
+        height: 60vh;
+    }
+
+    #Numbing {
+        height: 60vh;
+    }
+
+        #Numbing ul {
+            left: 0;
+        }
+
+    .left-vertical-line {
+        border-left: 0px solid white;
+    }
+
+    #collapsednav {
+        float: right;
+        background-color:black;
+        position:relative;
+        top:-10px;
+        width:100%;
+    }
+
+    .justify-content-around{
+        justify-content:right;
+    }
+
+    #MainContainer h1 {
+        padding-top: 2vw;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    #logo {
+        height: 90%;
+    }
+
+    .navbar{
+        padding:0;
+    }
+    #mobile-image {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+
+
+
+
+
+
+
+
+
 }
 
 #AboutContainer {
     position: relative;
-    top: 30px;
-    font-family: Fallind;
+    top: -10px;
+    font-family: 'birds of paradise ş personal use only';
     background-image: url(/images/fotorolam.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -187,7 +290,7 @@ body {
 }
 
     #AboutContainer h1 {
-        padding-top: 2vh;
+        padding: 2vh 0 4vh 0;
         text-align: center;
     }
 
@@ -223,6 +326,13 @@ body {
         list-style-type: "x ";
     }
 
+    #AftercareContainer img {
+        position: sticky;
+        top: 0;
+        z-index: -1;
+    }
+
+
 .number {
     font-family: 'Times New Roman', Times, serif;
 }
@@ -255,9 +365,6 @@ body {
         font-size: 20px;
     }
 
-    #NumbingContainer h2, #NumbingContainer ul, #NumbingContainer p {
-        background-color: rgba(255,255,255,0.9);
-    }
 
 #NotesContainer {
     padding-left: 15px;
@@ -267,7 +374,6 @@ body {
         font-family: 'birds of paradise ş personal use only';
         padding: 2vh 0 4vh 0;
         text-align: center;
-
     }
 
     #NotesContainer h2 {
@@ -277,8 +383,39 @@ body {
 
     #NotesContainer h6 {
         font-family: 'birds of paradise ş personal use only';
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
 
     #NotesContainer p {
+        font-family: 'birds of paradise ş personal use only';
+        font-size: 1.5em;
     }
+
+    #NotesContainer img {
+        height: 15vh;
+        margin-bottom: 2em;
+    }
+    
+
+
+
+#GaleryContainer {
+}
+
+    #GaleryContainer h1 {
+        font-family: 'birds of paradise ş personal use only';
+        padding: 2vh 0 4vh 0;
+        text-align: center;
+    }
+
+    #GaleryContainer img {
+        padding: 0 10px 10px 10px;
+    }
+
+#GaleryImageContainer {
+    margin: 0 30px 0 30px;
+}
+
+.TextContainer {
+    background-color: rgba(255,255,255,0.9);
+}
